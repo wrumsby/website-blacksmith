@@ -1,0 +1,8 @@
+{
+	"layout": "post",
+	"partials": {
+		"header": "header",
+		"comments": "comments",
+		"analytics": "analytics"
+	}
+}
