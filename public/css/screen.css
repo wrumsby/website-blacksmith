@@ -8,11 +8,14 @@ body {
 	text-align: left;	
 }
 
+.box {
+	max-width: 44em;
+}
+
 #header,
 #content,
 #comments {
 	background-color: #fff;
-	max-width: 44em;
 	line-height: 1.5em;
 }
 
@@ -34,4 +37,39 @@ body {
 
 #content h2:first-child {
 	margin-top: 0;
+}
+
+#about {
+	margin: 0;
+	padding: 1em 5em 1em 1em;
+	background-color: #333;
+	color: #fff;
+}
+
+#about .home {
+	float: left;
+}
+
+#about a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#about a:hover {
+	text-decoration: underline;
+}
+
+#about ul {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 1em;
+	padding: 0;
+	line-height: 1.4;
+}
+
+/* TODO: media query */
+#about p {
+	clear: left;
+	padding-top: 0.5em;
+	min-width: 14em;
 }

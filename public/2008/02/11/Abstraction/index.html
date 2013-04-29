@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Walter Rumsby's Web Site</title>
+	<link rel="stylesheet" href="../../../../../public/css/screen.css">
+</head>
+<body class="post">
+	<div id="header" class="box">
+<h1>Walter Rumsby's Web Site</h1>
+</div>
+	<div id="content" class="box"><h2>Abstraction</h2>
+<p>(I originally wrote this post on an internal blog in 2004 and since then several people have suggested that it is one of the best posts I have written. I&#39;m republishing it here for a wider audience.)</p>
+<blockquote>
+<p>abstract: <a href="http://www.merriam-webster.com/cgi-bin/dictionary?book=Dictionary&amp;va=abstract">Having only intrinsic form with little or no attempt at pictorial representation or narrative content</a></p>
+<p>intrinsic: <a href="http://www.m-w.com/cgi-bin/dictionary?va=intrinsic">Belonging to the <em>essential</em> nature or constitution of a thing</a></p>
+<p>abstraction: <a href="http://en.wikipedia.org/wiki/Abstraction">Abstraction uses a strategy of <em>simplification of detail</em>, wherein formerly concrete details are left ambiguous, vague, or undefined</a></p>
+</blockquote>
+<p>In the 20th Century a growing number of Western painters began to paint in a more abstract style. Although casual observers of art tend to generally prefer more representational painting, Western painters had mastered representation over the past 300 years, the development of technologies like photography made representation less interesting (and necessary) and artists developed a new appreciation for &quot;primitive artworks&quot; (e.g. Maori, Aboriginal and African art).</p>
+<p>Artists became less interested in painting objects &quot;accurately&quot; (in reality many &quot;realistic&quot; paintings added or removed elements for the sake of form and aesthetics) and more interested in painting in a more philosophical sense - the idea of painting.</p>
+<p>In <a href="http://en.wikipedia.org/wiki/The_Treachery_of_Images">The treachery of images</a> Magritte includes the phrase &quot;Ceci n&#39;est pas une pipe&quot; (&quot;This is not a pipe&quot;) in his painting - and it&#39;s not, it&#39;s a painting of a pipe.</p>
+<p>Some artists became more interested in things like the contrast of light, planes of colour, structural elements, capturing a mood or feeling.</p>
+<p>In <a href="http://www.mccahon.co.nz/ShowDetails.asp?iMainID=2598&amp;iImageIndex=0">Untitled, 1963</a> Colin McCahon seems to capture the somberness and loneliness of the New Zealand landscape, despite (or perhaps because of) his relatively clumsy brushwork. Interestingly, the simplicity of the painting isn&#39;t so far detached from &quot;reality&quot;, compare it to this photo of Mt Eden.</p>
+<p>American artist <a href="http://en.wikipedia.org/wiki/Richard_Diebenkorn">Richard Diebenkorn</a> also provides another insight into abstract painting. Compare <a href="http://collections.sfmoma.org/Obj1000$16227">Cityscape I</a> from 1963 with <a href="http://collections.sfmoma.org/Obj4418$16227">Ocean Park 54</a> from 1972. Initially both paintings look completely different, but both are landscapes and both have striking structural similarities (colour planes, polygons and lines). In the earlier painting blocks of colour, which dominate the latter, are obvious. If you step back and think about these ideas the two works suddenly seem remarkably similar.</p>
+<p>Diebenkorn is more interested in the structure of a scene than creating a picture perfect recreation of it. He&#39;s interested in how blocks of colour relate to each other. If you spent your entire career looking at landscapes and thinking about how to paint them it&#39;s an aguably natural evolution.</p>
+<p>An Abstraction You Might Be A Bit More Familiar With</p>
+<p>While abstract painting is often misunderstood, there is an abstraction that most people are familiar with that is very well understood.</p>
+<p><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=Mount+Eden,+Auckland,+New+Zealand&amp;ie=UTF8&amp;ll=-36.874059,174.766302&amp;spn=0.014385,0.040169&amp;z=14&amp;om=0&amp;output=embed&amp;s=AARTsJoLUQAA-mOhFue3H8BpLDmdx8JCxQ"></iframe><br><small><a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=Mount+Eden,+Auckland,+New+Zealand&amp;ie=UTF8&amp;ll=-36.874059,174.766302&amp;spn=0.014385,0.040169&amp;z=14&amp;om=0&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
+<p>Maps are probably the most successful abstraction there is. They are successful because they show only what is necessary for someone wanting to know how to get from one place to another.</p>
+<p>Is it easier to work out your route from the map or from this photo? What about a map compared with an aerial photo?</p>
+<p>Information design guru, Yale professor and authour of books including Envisioning Information, Edward Tufte advocates removing unnecessary elements in order to introduce new, useful ones. Maps are designed for a specific purpose, anything on a map that does not aid in that purpose is what Tufte would call &quot;chart junk&quot; - it&#39;s unnecessary and likely a hinderance to communication.</p>
+<p>It&#39;s as much what is not in the map as what is in the map that makes it so successful and usable.</p>
+<pre><code>Ideally, the design should disappear in favor of the information.</code></pre>
+<p>How Does This Relate to Software Development?</p>
+<p>Understanding abstract concepts is a fundamental part of software development. The following bit of JavaScript requires an understanding of abstract concepts:</p>
+<p>var n = 1;
+var m = 2;</p>
+<p>var s = n + m;</p>
+<p>If you can figure out that s has the value of 3 then you&#39;re thinking abstractly. Let&#39;s push this a little further:</p>
+<p>function add(a, b) {
+    return a + b;
+}</p>
+<p>var s = add(1, 2);</p>
+<p>Thanks to a little bit of abstract thinking we have a function that can be called from any other part of our code with which we can add any two numbers. Before our code could only add 1 to 2. What&#39;s more powerful and interesting?</p>
+<p>In object-oriented languages like Java we want to work with abstractions of real-world objects. Abstractions represent the key things we are interested in about these objects.</p>
+<p>A key part of abstracting something is simplifying it - so when we need to represent a concept like a person in software we simplify it down to only the properties and behaviours that we&#39;re interested in.</p>
+<p>Don&#39;t be fooled into thinking that simple things are bad or not powerful. Simple things are easier to use and ease of use is good.</p>
+<p>Finding the right abstraction is a key part of software development. From a certain point of view two objects that seem quite different may share some interesting characteristics, if you can express these characteristics in an appropriate way (e.g. as an interface) you give yourself the opportunity to reuse existing code (and tests!) and to do more interesting things with your software with little or no extra effort.</p>
+<p>If you fail to recognise the similarities you run the risk of of wasting a lot of time.</p>
+<p>Conclusion</p>
+<p>Abstraction is often seen as difficult to understand, but really it&#39;s about simplifying something so that it only describes the specific things we are interested in. The difficulty arises if you don?t know what they are.</p>
+<p>Take the time to reconsider the potential similarities between unlike things. </p>
+</div>
+	<div id="comments" class="box">
+<div id="disqus_thread"></div>
+
+<script type="text/javascript" src="http://disqus.com/forums/walterrumsby/embed.js" defer="defer"></script>
+<noscript>
+	<a href="http://walterrumsby.disqus.com/?url=ref">View the discussion thread.</a>
+</noscript>
+
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+	<div id="about" class="box">
+<a href="http://walter.rumsby.name/" class="home"><img class="photo" alt="Photo of Walter Rumsby" src="http://www.gravatar.com/avatar/fbf524a52e0a323438f79963415b04f2"></a>
+<ul>
+	<li>
+		<a href="https://twitter.com/wrumsby">Twitter</a>
+	</li>
+	<li>
+		<a href="https://github.com/wrumsby">Github</a>
+	</li>
+	<li>
+		<a href="http://www.linkedin.com/in/wrumsby">LinkedIn</a>
+	</li>
+	<li>
+		<a href="http://www.last.fm/user/wrumsby">Last.fm</a>
+	</li>
+</ul>
+<p>
+	I'm a Front-End Engineer living in 
+	<a href="flickr.com/places/New+Zealand/Auckland">Auckland</a>, New Zealand.
+</p>
+</div>
+	<div id="analytics">
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-1803153-2");
+
+	pageTracker._initData();
+	pageTracker._trackPageview();
+</script>
+</div>
+</body>
+</html>
