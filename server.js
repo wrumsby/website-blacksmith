@@ -48,7 +48,7 @@ http.createServer(function (req, res) {
 		localPath += '/index.html';
 	}
 
-	fs.exists(localPath, function (exists) {
+	path.exists(localPath, function (exists) {
 		if (exists) {
 			getFile(localPath, extensions[ext], res);
 		} else if (localPath === __dirname + '/public/index.html') {
