@@ -40,7 +40,7 @@ http.createServer(function (req, res) {
 	if (filename === 'index.html') {
 		localPath += 'index.html';
 	} else {
-		localPath += url.parse(req.url).pathname;
+		localPath += url.parse(req.url).pathname.replace(/\+/g, '-');
 	}
 
 	if (!ext) {
@@ -48,7 +48,7 @@ http.createServer(function (req, res) {
 		localPath += '/index.html';
 	}
 
-	path.exists(localPath, function (exists) {
+	fs.exists(localPath, function (exists) {
 		if (exists) {
 			getFile(localPath, extensions[ext], res);
 		} else if (localPath === __dirname + '/public/index.html') {
