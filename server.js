@@ -40,7 +40,7 @@ http.createServer(function (req, res) {
 	if (filename === 'index.html') {
 		localPath += 'index.html';
 	} else {
-		localPath += url.parse(req.url).pathname.replace(/\+/g, '_');
+		localPath += url.parse(req.url).pathname;
 	}
 
 	if (!ext) {
