@@ -40,6 +40,8 @@ http.createServer(function (req, res) {
 	if (filename === 'index.html') {
 		localPath += 'index.html';
 	} else {
+		// After lots of jumping around replacing + with - seems to
+		// not upset Azure like other replacements can.
 		localPath += url.parse(req.url).pathname.replace(/\+/g, '-');
 	}
 
@@ -48,6 +50,8 @@ http.createServer(function (req, res) {
 		localPath += '/index.html';
 	}
 
+	// Azure seems to be running an older version of Node where 
+	// path.exists has not been deprecated in favour of fs.exists.
 	path.exists(localPath, function (exists) {
 		if (exists) {
 			getFile(localPath, extensions[ext], res);
